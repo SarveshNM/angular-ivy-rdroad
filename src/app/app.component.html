@@ -1,7 +1,18 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
-<p>Today is {{today | date}}</p>
-<p>The time is {{today | date:'h:mm:ss a'}}</p>
-<p></p>
+<div class="content">
+  <div fxLayout="row wrap">
+    <div fxFlex="25%" *ngFor="let num of [1,2,3,4,5,6,7]">
+      <mat-card class="mat-elevation-z4" >
+        <mat-card-header>
+          
+        </mat-card-header>
+        <img mat-card-image src="assets/images/mount.jpg">
+        <mat-card-content>
+          <p>
+            <mat-card-title>Mountains {{num}}</mat-card-title>
+          </p>
+        </mat-card-content>
+       
+      </mat-card>
+    </div>
+  </div>
+  </div>
